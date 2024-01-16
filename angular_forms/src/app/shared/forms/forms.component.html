@@ -1,0 +1,10 @@
+<h1>Informacion Personal:</h1>
+<h3>Nombre: {{name}}  </h3>
+<h3>Apellido: {{apellido}}  </h3>
+<h3>Edad: {{edad}}  </h3>
+<h3>Ocupacion: {{ocupacion}}  </h3>
+
+
+<label for="item-input">Add an item:</label>
+<input type="text" id="item-input" #newItem>
+<button type="button" (click)="addNewItem(newItem.value)">Add to parent's list</button>
